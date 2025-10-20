@@ -12,6 +12,7 @@ export default function App(){
   useEffect(()=>{ setYear(String(new Date().getFullYear())) },[])
 
   const projects = [
+    { title: 'Application of Drones in Aquaculture– AI-powered Image Analysis', desc: 'Developed a drone-based monitoring system to assess aquaculture pond health using AI and image processing. Integrated real-time data collection, environmental sensing, and Python-based classification models for water quality and algal bloom detection.', tags:['MATLAB','Python','NanoEdge AI Studio']},
     { title: 'Rotating Detonation Engine (RDE)', desc: 'Technical study on wave dynamics, injector/annulus trade-offs, performance metrics, and safety envelope.', tags:['Propulsion','Thermo-Fluids']},
     { title: 'Telescopic Hold-Open Rod (AeroHack 2025)', desc: 'Concept + FBD + hand calcs + BOM for nacelle cowl door support with reliability and weight targets.', tags:['Structures','Design']},
     { title: 'AI SkyBuddy — AR Astronomy', desc: 'AR app with real-time overlays, narration, quizzes. Stack: Flutter + Unity AR Foundation; API integrations.', tags:['AR','AI','Flutter']},
@@ -49,13 +50,14 @@ export default function App(){
 
         <Section id="experience" title="Experience">
           <div className="space-y-4">
-            <ExperienceItem role="Intern — Rotating machinery & material testing" org="RCMA (Helicopter)">
-              <li>Hands-on testing and analysis related to helicopter systems and materials.</li>
+            <ExperienceItem role=" Research Intern" org="RCMA (Helicopter)">
+              <li>Conducted aerodynamic load and stress analysis for rotor assemblies using MATLAB and Python.</li>
               <li>Condition monitoring fundamentals for rotating components.</li>
             </ExperienceItem>
-            <ExperienceItem role="Intern — Rotating machinery & material testing" org="L&T Shipbuilding">
-              <li>Exposure to marine rotating equipment and structural material evaluations.</li>
-              <li>Applied data-driven approaches to improve testing workflows.</li>
+            <ExperienceItem role=" Engineering Intern" org="L&T Shipbuilding">
+              <li>Performed FEA and stress validation of marine composite interfaces relevant to aerospace standards.</li>
+              <li>Supported inspection workflow automation for quality assurance documentation.</li>
+              <li> Collaborated on structural optimization of composite and metallic assemblies.</li>
             </ExperienceItem>
           </div>
         </Section>
