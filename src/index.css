@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables for themes */
+:root{
+  --bg:#0b0f14;
+  --bg-elev:#121824;
+  --text:#e6ebf2;
+  --muted:#a0a9b8;
+  --accent:#7aa2ff;
+  --card:#0f1520;
+  --border:#1c2433;
+}
+:root.light{
+  --bg:#f7fafc;
+  --bg-elev:#ffffff;
+  --text:#0e1726;
+  --muted:#475569;
+  --accent:#3b82f6;
+  --card:#ffffff;
+  --border:#e2e8f0;
+}
+
+html, body, #root { height: 100%; }
+a { @apply text-accent; }
+.section { @apply py-16 border-t border-border; }
+.container { @apply w-[min(1100px,92%)] mx-auto; }
+.card { @apply bg-card border border-border rounded-2xl p-6 shadow-soft; }
+.btn { @apply inline-block border border-border rounded-xl px-4 py-2 bg-[var(--bg-elev)] hover:-translate-y-0.5 transition; }
+.btn-primary { @apply text-white border-transparent; background: linear-gradient(135deg,var(--accent),#a78bfa); }
+.badge { @apply border border-border text-muted rounded-md px-2 py-1 text-sm; }
