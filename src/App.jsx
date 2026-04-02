@@ -447,7 +447,7 @@ export default function App() {
               📄 Download Resume (PDF)
             </a>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginTop: "1rem" }}>
-              {[["3+", "Internships"], ["1", "Patent filed"], ["4+", "Major Projects"], ["7.68", "CGPA / 10"]].map(([v, l]) => (
+              {[["3+", "Internships"], ["1", "Patent filed"], ["4+", "Major Projects"]].map(([v, l]) => (
                 <div key={l} style={{ textAlign: "center", background: "rgba(255,255,255,0.04)", borderRadius: "0.75rem", padding: "0.75rem" }}>
                   <div style={{ color: "var(--text)", fontWeight: 800, fontSize: "1.1rem" }}>{v}</div>
                   <div style={{ color: "var(--muted)", fontSize: "0.68rem", marginTop: "0.2rem" }}>{l}</div>
